@@ -1,0 +1,21 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTPS} off 
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
+# Disable server signature
+ServerSignature Off
+
+# Disable directory listing
+IndexIgnore *
+
+# Disable access to /vendor/*
+RewriteRule ^(.*)/vendor/.*\.(php|rb|py)$ - [F,L,NC]
+RewriteRule ^vendor/.*\.(php|rb|py)$ - [F,L,NC]
+
+# Disable anything access to .htaccess, .env, etc
+<FilesMatch "^\.">
+  Order allow,deny
+  Deny from all
+</FilesMatch>

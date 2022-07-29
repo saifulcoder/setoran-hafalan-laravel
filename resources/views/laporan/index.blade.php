@@ -19,9 +19,6 @@
       <div class="form-group">
         <label class="control-label col-sm-2"></label>
         <div class="col-sm-10">
-          {{-- <a href="{{asset('admin/mutabaah/kelas/')}}/{{ $idx }}" class="btn btn-default"><i
-            class="fa fa-chevron-circle-left"></i> Kembali</a> --}}
-
           <input type="submit" class="btn btn-success" name="submit" value="Submit" />
         </div>
       </div>
@@ -35,7 +32,7 @@
 <!-- BAR CHART -->
 <div class="box box-success">
   <div class="box-header with-border">
-    <h3 class="box-title">Bar Chart Kehadiran Santri</h3>
+    <h3 class="box-title">table {{ $page_title }}</h3>
 
     <div class="box-tools">
       <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
