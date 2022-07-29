@@ -40,13 +40,15 @@
 			$this->form[] = ['label'=>'NIS','name'=>'nis','type'=>'number','validation'=>'required','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Nama','name'=>'nama','type'=>'text','validation'=>'required|string|min:3|max:70','width'=>'col-sm-10','placeholder'=>'You can only enter the letter only'];
 			$this->form[] = ['label'=>'Kelas','name'=>'id_kelas','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'kelas,kelas'];
+			$this->form[] = ['label'=>'Status','name'=>'status','type'=>'select','validation'=>'required','width'=>'col-sm-10','dataenum'=>'aktif;tidak aktif'];
 			# END FORM DO NOT REMOVE THIS LINE
 
 			# OLD START FORM
 			//$this->form = [];
+			//$this->form[] = ['label'=>'NIS','name'=>'nis','type'=>'number','validation'=>'required','width'=>'col-sm-10'];
 			//$this->form[] = ['label'=>'Nama','name'=>'nama','type'=>'text','validation'=>'required|string|min:3|max:70','width'=>'col-sm-10','placeholder'=>'You can only enter the letter only'];
 			//$this->form[] = ['label'=>'Kelas','name'=>'id_kelas','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'kelas,kelas'];
-			//// $this->form[] = ['label'=>'Ruang','name'=>'id_ruang','type'=>'select2','validation'=>'required|integer|min:0','width'=>'col-sm-10','datatable'=>'ruang,ruang'];
+			//$this->form[] = ['label'=>'Status','name'=>'status','type'=>'select','validation'=>'required','width'=>'col-sm-10','dataenum'=>'aktif,tidak aktif'];
 			# OLD END FORM
 
 			/* 

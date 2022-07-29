@@ -6,6 +6,7 @@
 <!-- Your html goes here -->
 <div class='panel panel-default'>
   <form class="form-horizontal">
+    @csrf
     <div class='panel-heading'>{{ $page_title }}</div>
     <div class='panel-body'>
       <div class='form-group' id='form-group-nama' style="">
