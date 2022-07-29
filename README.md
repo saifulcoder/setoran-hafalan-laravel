@@ -1,8 +1,5 @@
-**
-
 # السلام عليكم ورحمة الله وبركاته
 
-**
 Bismillah
 mau menshare aplikasi sederhana untuk mencatat hafalan santri.
 
@@ -21,6 +18,7 @@ php 7.4
 mysql atau maria db
 
 ## Instalasi
+
 
 ## Login
 
